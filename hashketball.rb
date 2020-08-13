@@ -228,9 +228,9 @@ def big_shoe_rebounds
     if shoess > largest_shoe
       largest_shoe = shoess
       largest_shoe_win = stats[:rebounds]
+      binding.pry
 end
 end
 end
 return largest_shoe_win
-binding.pry
 end
