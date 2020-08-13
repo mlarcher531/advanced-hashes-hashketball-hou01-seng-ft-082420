@@ -203,7 +203,10 @@ def team_names
 
 
 def player_stats(name)
-  game_hash.each do |first, second|
-  binding.pry
+  game_hash.each do |first, info|
+  #binding.pry
+  if info[:player_name] == name
+    return first[:players]
+  end
 end
 end
