@@ -205,8 +205,11 @@ def team_names
 def player_stats(name)
   game_hash.each do |team, info|
   #binding.pry
-  info.each do |first, second|
-    binding.pry
+  info.each do |key, value|
+    #binding.pry
+    key.each do |first, second|
+      binding.pry
+    end
   end
 end
 end
