@@ -208,7 +208,8 @@ def player_stats(name)
   info.each do |key, value|
     #binding.pry
     key.each do |first|
-    end
+    binding.pry
+  end
   end
 end
 end
