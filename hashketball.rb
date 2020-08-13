@@ -229,6 +229,6 @@ def big_shoe_rebounds
       largest_shoe_win = stats[:rebounds]
   end
 end
-end
 return largest_shoe_win
+end
 end
