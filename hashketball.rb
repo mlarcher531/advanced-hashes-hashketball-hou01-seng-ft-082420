@@ -223,7 +223,8 @@ def big_shoe_rebounds
   info[:players].each do |stats|
     #binding.pry
     shoess = stats[:shoe].to_i
-    binding.pry
+    #binding.pry
+    if shoess > largest_shoe
       largest_shoe = stats[:player_name]
   end
   largest_shoe
