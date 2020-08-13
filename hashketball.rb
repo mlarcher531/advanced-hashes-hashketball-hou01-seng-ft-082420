@@ -230,4 +230,5 @@ def big_shoe_rebounds
   end
 end
 end
+return largest_shoe_win
 end
