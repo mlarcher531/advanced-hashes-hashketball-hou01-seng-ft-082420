@@ -223,6 +223,5 @@ def big_shoe_rebounds
   info[:players].each do |stats|
     binding.pry
   end
-end 
 end
-
+end
