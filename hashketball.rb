@@ -207,6 +207,7 @@ def player_stats(name)
   #binding.pry
   if info[:player_name] == name
     binding.pry
+    puts "hello"
   end
 end
 end
