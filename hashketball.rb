@@ -206,3 +206,5 @@ def player_stats(name)
   game_hash.each do |first, second|
   binding.pry
 end
+end
+
