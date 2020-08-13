@@ -207,9 +207,7 @@ def player_stats(name)
   game_hash.each do |team, info|
   #binding.pry
   info[:players].each do |key, value|
-      #binding.pry
-      key[:player_name].map do |first, second|
-        binding.pry
+      binding.pry
       end
     end
     end
