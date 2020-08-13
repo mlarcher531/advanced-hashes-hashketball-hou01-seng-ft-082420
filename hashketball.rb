@@ -207,8 +207,6 @@ def player_stats(name)
   game_hash.each do |team, info|
   #binding.pry
   info[:players].each do |key, value|
-    #binding.pry
-    if info[:players] == name
       binding.pry
     end
     end
