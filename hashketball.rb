@@ -222,7 +222,8 @@ def big_shoe_rebounds
   game_hash.each do |home, info|
   info[:players].each do |stats|
     #binding.pry
-    if stats[:shoe].to_i > largest_shoe
+    shoess = stats[:shoe].to_i
+    binding.pry
       largest_shoe = stats[:player_name]
   end
   largest_shoe
