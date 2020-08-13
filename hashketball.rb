@@ -208,7 +208,7 @@ def player_stats(name)
   #binding.pry
   info[:players].each do |key, value|
       #binding.pry
-      key[:player_name].each do |first, second|
+      key[:player_name].map do |first, second|
         binding.pry
       end
     end
