@@ -1,3 +1,4 @@
+require 'pry'
 # Write your code below game_hash
 def game_hash
   {
@@ -127,3 +128,73 @@ def game_hash
 end
 
 # Write code here
+def num_points_scored(player)
+  total_points = 0
+  game_hash.each do |home_away, team_info|
+    #binding.pry
+    team_info[:players].each do |stats|
+         if stats[:player_name] == player
+              total_points = stats[:points]
+            return total_points
+        end
+    end
+  end
+end
+
+
+
+def shoe_size(player)
+  shoe_size = 0
+  game_hash.each do |no_use, team_info|
+    #binding.pry
+    team_info[:players].each do |stats|
+    #binding.pry
+    if stats[:player_name] == player
+      shoe_size = stats[:shoe]
+      return shoe_size
+  end
+  end
+  end
+end
+
+
+
+def team_colors(team)
+  team_colors = nil
+  game_hash.each do |nothing, team_info|
+#binding.pry
+if team_info[:team_name] == team
+  team_colors = team_info[:colors]
+  return team_colors
+end
+end
+end
+
+
+
+def team_names
+   team_one = game_hash[:away][:team_name]
+   team_two =  game_hash[:home][:team_name]
+   teams = [team_one, team_two]
+   #binding.pry
+  end
+
+
+
+  def player_numbers(team_name)
+    jersey_numbers = []
+    game_hash.each do |team, team_info|
+      if team_name == team_info[:team_name]
+        team_info.each do |key, value|
+          #binding.pry
+          if key == :players
+            value.each do |stats|
+              binding.pry
+              jersey_numbers.push(stats[:number])
+  end
+  end
+  end
+  end
+  end
+  return jersey_numbers
+  end
