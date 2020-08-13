@@ -208,8 +208,8 @@ def player_stats(name)
   #binding.pry
   info[:players].each do |key, value|
       if key[:player_name] == name
-        puts "hello"
-        binding.pry
+        #binding.pry
+        return key
       end
     end
   end
