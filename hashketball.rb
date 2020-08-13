@@ -214,3 +214,15 @@ def player_stats(name)
     end
   end
     end
+
+
+
+def big_shoe_rebounds
+  largest_shoe = nil
+  game_hash.each do |home, info|
+  info[:players].each do |stats|
+    binding.pry
+  end
+end 
+end
+
